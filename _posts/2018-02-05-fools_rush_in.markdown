@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Fools Rush In? "
-date:       2018-02-05 16:49:44 +0000
+date:       2018-02-05 11:49:45 -0500
 permalink:  fools_rush_in
 ---
 
