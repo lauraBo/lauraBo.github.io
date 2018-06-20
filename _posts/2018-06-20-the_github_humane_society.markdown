@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      " The Github Humane Society"
-date:       2018-06-20 17:21:04 +0000
+date:       2018-06-20 13:21:04 -0400
 permalink:  the_github_humane_society
 ---
 
@@ -66,9 +66,10 @@ After creating my migration files and models, I then used tux in the terminal to
 
 I started to fill up a seed file with data, but then was unsure about whether I needed to manually add ‘user_id’ data to the file, or whether this would be done automatically when I ran the file. I decided not to run ‘ rake db:seed’ as I was worried I would mess up my database with invalid data.  I decided to add my data ( sign up as different users and create dog instances)  on the app instead, using shotgun. 
 
-The next step was creating the ROUTES and CONTROLLERS.  Here is a table I created to help me understand the different routes and actions needed in my app: 
+The next step was creating the ROUTES and CONTROLLERS.  Here is a table I created to help me understand the different routes and actions needed in my app:   
+[]https://imgur.com/a/3wau1VF
 
-![](https://imgur.com/a/3wau1VF)
+
 
 DOGS CONTROLLER 
 
