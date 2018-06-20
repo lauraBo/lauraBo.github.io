@@ -68,8 +68,7 @@ I started to fill up a seed file with data, but then was unsure about whether I 
 
 The next step was creating the ROUTES and CONTROLLERS.  Here is a table I created to help me understand the different routes and actions needed in my app:   
 
-[https://imgur.com/a/3wau1VF]
-https://imgur.com/a/3wau1VF
+
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/3wau1VF"><a href="//imgur.com/3wau1VF"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
