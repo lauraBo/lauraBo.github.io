@@ -8,17 +8,21 @@ permalink:  bourbon_hunter
 
 Like the Sinatra project, for this Rails project I spent a large amount of time preparing in advance. Also like that last project, despite my extensive preplanning, I nonetheless hit numerous unexpected roadblocks along the way. This time though, it wasn’t my ignorance of GitHub that was to blame, it was my lack of understanding of the concept of a join table, amongst other things.
 
+https://image.ibb.co/g31jL9/Screen_Shot_2018_08_24_at_23_15_28.png
+
+![](https://image.ibb.co/g31jL9/Screen_Shot_2018_08_24_at_23_15_28.png)
+
 To start, I considered what kind of models I would need to fulfil the requirements of the project.  I originally came up with the following models:
 
-**Models:  Agency, Agent, Actor
-**
+ Models:  Agency, Agent, Actor
+
 Agency has many Agents
 Agency has many Actors through Agents
-**
+
 Agent has many Actors 
 Agent belongs to an Agency
 
-**Actor belongs to an Agent**
+Actor belongs to an Agent**
 
 The join table would be the Agents’ table and the user submittable attribute would be **appointment_times **
 
