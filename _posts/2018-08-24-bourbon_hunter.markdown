@@ -10,17 +10,17 @@ Like the Sinatra project, for this Rails project I spent a large amount of time 
 
 To start, I considered what kind of models I would need to fulfil the requirements of the project.  I originally came up with the following models:
 
-Models:  Agency, Agent, Actor
-
+**Models:  Agency, Agent, Actor
+**
 Agency has many Agents
 Agency has many Actors through Agents
-
+**
 Agent has many Actors 
 Agent belongs to an Agency
 
-Actor belongs to an Agent
+**Actor belongs to an Agent**
 
-The join table would be the Agents’ table and the user submittable attribute would be appointment_times 
+The join table would be the Agents’ table and the user submittable attribute would be **appointment_times **
 
 I was very glad that I double-checked my ideas with my section leader before I went any further with the project. Luisa quickly informed me that these models would not fulfil the project requirements. She explained to me that, while  I had got the types of relationships and the user submittable attribute, by definition, “a join table is the "go-between” specifically in a many-to-many relationship.” Consequently, in my example, an agency has many users through agents, but a user doesn’t have many agencies through agents. She explained further: “It has to go both ways. To put it another way, you’ll be looking at least two belongs_to relationships on a join model.”
 
@@ -78,6 +78,7 @@ Users     /login  - log in to account
            
 I created some tables to show the routes I would be using to make things super clear for me:
 *insert pic one here* ![](https://ibb.co/jSdLtU)
+[](https://ibb.co/jSdLtU)
 
 I knew I had to  make use of a nested resource with the appropriate RESTful URLs. My nested resource also had to provide a FORM that relates to the parent resource.
 
