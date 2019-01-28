@@ -25,7 +25,7 @@ I wanted to discuss three of the problems I came across while completing the pro
 1. I created a ‘Next’ button on the ‘Bourbon view’ show page and managed to successfully display the corresponding data for each bourbon though javascript. However, I couldn’t work out why the stockists that were associated to the individual bourbons were not being displayed. 
 
 The original code:
-![](https://imgur.com/lMWR6nH)
+![](https://imgur.com/lMWR6nH.png)
 
 
 
@@ -52,7 +52,7 @@ I did some research online about how to display associated ‘has_many’ data. 
 
 I visited the json URL endpoint to check what data I was getting back from the AJAX request: 
 
-![](https://imgur.com/3sWYShe)
+![](https://imgur.com/3sWYShe.png)
 
 
 
@@ -67,7 +67,7 @@ As it turned out, I  had not been looking at the json data correctly. The stocki
 
 
 I had to create a loop that iterated through each piece of data in the array:
-![](https://imgur.com/RtMnZJ8)
+![](https://imgur.com/RtMnZJ8.png)
 
 
 I can’t tell you how happy I was to finally see the beautiful stockists data on the page!
@@ -84,7 +84,7 @@ I also removed them from the manifest file.
 
 I had read that turbo links can sometimes affect the ‘document ready’ function inside your J.S files. Removing the two gems solved the loading javascript problem (without refreshing page) but unfortunately it also caused my javascript features on the Stockists index view page to stop working. After researching some possible solutions on SlackOverflow, I decided to re-install the turbo links gem, and add it to the manifest file again. Finally, I added the following line of code ‘turbolinks:load’ to the ‘document ready’ function in the stockists.js file:
 
-![](https://imgur.com/QPnkzjp)
+![](https://imgur.com/QPnkzjp.png)
 
 
 This solved the problem!
