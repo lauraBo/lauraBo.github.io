@@ -25,7 +25,7 @@ I wanted to discuss three of the problems I came across while completing the pro
 1. I created a ‘Next’ button on the ‘Bourbon view’ show page and managed to successfully display the corresponding data for each bourbon though javascript. However, I couldn’t work out why the stockists that were associated to the individual bourbons were not being displayed. 
 
 The original code:
-![](https://imgur.com/a/57XgJyK)
+![](https://imgur.com/lMWR6nH)
 
 
 
@@ -52,7 +52,7 @@ I did some research online about how to display associated ‘has_many’ data. 
 
 I visited the json URL endpoint to check what data I was getting back from the AJAX request: 
 
-![](https://imgur.com/a/zdPJZcd)
+![](https://imgur.com/3sWYShe)
 
 
 
@@ -61,13 +61,13 @@ I could see that I had successfully completed the first two and a half steps - H
 The problem was clearly in the code that would display the data to the DOM. 
 I had successfully displayed the associated distillery name, so why wouldn’t the associated stockists display? 
 
-As it turned out, I  had not been looking at the json data correctly. The stockists data was an ARRAY. I couldn’t simply use the same code that I used for the distillery data to display:
+As it turned out, I  had not been looking at the json data correctly. The stockists data was an **ARRAY**. I couldn’t simply use the same code that I used for the distillery data to display:
 
  $(“.distilleryName").text(data["distillery"]["name"]);
 
 
 I had to create a loop that iterated through each piece of data in the array:
-![](https://imgur.com/a/SZCkdrg)
+![](https://imgur.com/RtMnZJ8)
 
 
 I can’t tell you how happy I was to finally see the beautiful stockists data on the page!
@@ -84,7 +84,7 @@ I also removed them from the manifest file.
 
 I had read that turbo links can sometimes affect the ‘document ready’ function inside your J.S files. Removing the two gems solved the loading javascript problem (without refreshing page) but unfortunately it also caused my javascript features on the Stockists index view page to stop working. After researching some possible solutions on SlackOverflow, I decided to re-install the turbo links gem, and add it to the manifest file again. Finally, I added the following line of code ‘turbolinks:load’ to the ‘document ready’ function in the stockists.js file:
 
-![](https://imgur.com/a/IyKl1JS)
+![](https://imgur.com/QPnkzjp)
 
 
 This solved the problem!
